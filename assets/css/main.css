@@ -82,12 +82,12 @@ ul {
 - Hero section
 */
 
-.hero {
+.header {
   width: 100%;
   position: relative;
 }
 
-.hero__nav {
+.header__nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -97,7 +97,7 @@ ul {
 /* .hero__toggle-menu {
 } */
 
-.hero__links {
+.header__links {
   display: flex;
   align-items: center;
   justify-content: space-between;
