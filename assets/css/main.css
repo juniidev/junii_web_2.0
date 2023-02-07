@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Prompt:wght@200;300;400;500;600;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  color: var(--rb-dark);
+}
+
+:root {
+  --white: #ffff;
+  --rb-dark: #041c2c;
+  --gray-700: #969bab;
+  --alt-orange: #ff764d;
+  --alt-lima: #c8f543;
+  --gray-100: #f4f5f7;
+
+  --font-title: "Prompt", sans-serif;
+  --font-description: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-title);
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+ul {
+  list-style: none;
+}
+
+/* .flex {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5em);
+} */
+
+.flex > * {
+  flex: 1 1 25em;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.btn__cta {
+  color: var(--white);
+  text-decoration: none;
+  background-color: var(--rb-dark);
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-weight: 500;
+  box-shadow: 0 0 1px;
+  border: 2px solid var(--rb-dark);
+}
+
+.btn__cta:active {
+  color: var(--rb-dark);
+  border: 2px solid var(--rb-dark);
+  background-color: transparent;
+}
+
+/* 
+- Hero section
+*/
+
+.hero {
+  width: 100%;
+  position: relative;
+}
+
+.hero__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+/* .hero__toggle-menu {
+} */
+
+.hero__links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(2rem, 5vw, 5em);
+  font-weight: 500;
+  font-size: 18px;
+}
