@@ -6,8 +6,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  color: var(--rb-dark);
 }
 
 :root {
@@ -16,7 +14,8 @@
   --gray-700: #969bab;
   --alt-orange: #ff764d;
   --alt-lima: #c8f543;
-  --gray-100: #f4f5f7;
+  --gray-100: #f6f6f9;
+  --purple-dark: #14131e;
 
   --font-title: "Prompt", sans-serif;
   --font-description: "Montserrat", sans-serif;
@@ -28,6 +27,8 @@ html {
 
 body {
   font-family: var(--font-title);
+  color: var(--purple-dark);
+  background-color: var(--white);
 }
 
 img {
@@ -40,10 +41,15 @@ a {
   display: inline-block;
   text-decoration: none;
   transition: 0.3s ease-in-out;
+  color: var(--purple-dark);
 }
 
 ul {
   list-style: none;
+}
+
+small {
+  text-transform: uppercase;
 }
 
 /* .flex {
@@ -63,23 +69,43 @@ ul {
 
 .btn__cta {
   color: var(--white);
-  text-decoration: none;
-  background-color: var(--rb-dark);
+  background-color: var(--purple-dark);
   padding: 6px 16px;
   border-radius: 30px;
   font-weight: 500;
   box-shadow: 0 0 1px;
-  border: 2px solid var(--rb-dark);
+  border: none;
+  outline: none;
+  text-transform: uppercase;
 }
 
-.btn__cta:active {
-  color: var(--rb-dark);
-  border: 2px solid var(--rb-dark);
-  background-color: transparent;
+.btn__cta-light {
+  color: var(--purple-dark);
+  background-color: var(--gray-700);
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-weight: 500;
+  box-shadow: 0 0 1px;
+  border: none;
+  outline: none;
+  font-family: var(--font-title);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 50px;
+  font-family: var(--font-title);
+  color: var(--gray-100);
+}
+
+.description {
+  font-family: var(--font-description);
+  color: var(--gray-700);
 }
 
 /* 
-- Hero section
+- Header section ================================
 */
 
 .header {
@@ -88,6 +114,7 @@ ul {
 }
 
 .header__nav {
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -103,5 +130,68 @@ ul {
   justify-content: space-between;
   gap: clamp(2rem, 5vw, 5em);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 17px;
+
+  text-transform: uppercase;
+}
+
+/* 
+- Hero section ================================
+*/
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__container {
+  width: 95%;
+  height: 78%;
+  background-color: #14131e;
+  border-radius: 26px;
+  position: relative;
+  top: 0;
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--gray-100);
+  width: 100%;
+  height: 100%;
+
+  gap: 20px;
+}
+
+.hero__text .title {
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.hero__image {
+  position: relative;
+  top: -596px;
+  left: 0;
+}
+
+.hero__image-1 {
+  position: absolute;
+  width: 95%;
+}
+
+.hero__image-2 {
+  width: 82.4%;
+  position: absolute;
+  right: 0;
+}
+
+.hero__image-3 {
+  position: absolute;
+  border-radius: 26px;
+  width: 80%;
+  left: 0;
 }
